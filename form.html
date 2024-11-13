@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Pizzeria DEV.F </h1>
+    <p>
+        <span style="color: blue">Ingrese sus datos!</span>
+    </p>
+    
+    <form>
+        <br>
+        <label for="f_name">Nombre: </label>
+        <input
+            type="text"
+            name="nombre"
+            placeholder="Ingresa tu nombre completo"
+            maxlength="25"
+            minlength="2"
+            required
+        />
+        <br>
+
+        <label for="f_email">Email: </label>
+        <input
+            id="f_email"
+            type="text"
+            name="email"
+            placeholder="Ingresa tu email"
+            maxlength="35"
+            minlength="5"
+            required
+        />
+        <br>
+
+        <label for="f_direccion">Direccion: </label>
+        <input
+            id="f_direccion"
+            type="text"
+            name="direccion"
+            placeholder="Ingresa su direccion"
+            maxlength="35"
+            minlength="5"
+            required
+        />
+        <br>
+
+        <lable for="f_hora"> Ingrese la hora de entrega apropiada: </label>
+        <input
+            type="time"
+            name="hora_nacimiento"
+            required
+        >
+        <br>
+        
+        <label for ="f_pizza">Ingrese la pizza que desee comprar</label>
+        <select name="Pizza">
+            <option value="" selected hidden disabled >Selecciona la opción</option>
+            <option value="Napolitana">Pizza Napolitana</option>
+            <option value="Peperoni">Pizza Peperoni</option>
+            <option value="Vegana">Pizza Vegana</option>
+            <option value="4quesos">Pizza 4 quesos</option>
+        </select>
+        <br>
+        <button type="submit">Enviar información</button>
+        <button type="reset">Resetear información</button>
+     </form>
+</body>
+</html>
